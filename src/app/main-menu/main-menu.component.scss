@@ -1,0 +1,31 @@
+@import '../../theme.scss';
+
+.contact-menu {
+    background-color: $color1;
+    display: flex;
+    justify-content: right;
+    padding: 13px 0;
+
+    &-list {
+        list-style: none;
+        display: flex;
+        padding: 0 23px;
+        
+        li {
+            margin-left: 6px;
+        }
+    }
+
+    &-tel {
+        padding: 0 23px;
+
+        img {
+            margin-right: 10px;
+        }
+
+        a {
+            color: $color8;
+            font-size: $fontSizeS;
+        }
+    }
+}
