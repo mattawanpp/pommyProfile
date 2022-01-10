@@ -3,10 +3,17 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+@font-face {
+    font-family: Kanit;
+    src: url(../src/assets/fonts/Kanit-Regular.ttf) format('truetype');
+    src: url(../src/assets/fonts/Kanit-Regular.woff) format('woff');
+}
+
 ul {
     margin-bottom: 0;
 }
 
-html {
+html, body {
     font-size: 20px;
+    font-family: Kanit, "Kanit", sans-serif;
 }

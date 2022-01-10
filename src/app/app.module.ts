@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainMenuModule } from './main-menu/main-menu.module';
+import { ProductBannerModule } from './product-banner/product-banner.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MainMenuModule } from './main-menu/main-menu.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    MainMenuModule
+    MainMenuModule,
+    ProductBannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
