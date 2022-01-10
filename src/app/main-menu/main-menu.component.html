@@ -5,7 +5,6 @@
         </li>
     </ul>
     <div class="yellow-line">
-        
     </div>
     <div class="contact-menu-tel">
         <img src="../../assets/icons/tel.svg">
@@ -14,44 +13,36 @@
 </div>
 
 <div class="product-menu">
-    <ul class="product-menu-list">
-        <li>
-            <img class="logo" src="../../assets/pictures/logo.png">
-        </li>
-        <li class="main-menu">
-            <span class="text-menu">ซื้อประกัน</span>
-            <img src="../../assets/icons/next.svg">
-        </li>
-        <li class="main-menu">
-            <span class="text-menu">โปรโมชั่น</span>
-        </li>
-        <li class="main-menu">
-            <span class="text-menu">เคลมประกัน</span>
-            <img src="../../assets/icons/next.svg">
-        </li>
-        <li class="main-menu">
-            <span class="text-menu">ช่วยเหลือ</span>
-            <img src="../../assets/icons/next.svg">
-        </li>
-        <li class="main-menu">
-            <span class="text-menu">รู้จักประกัน.com</span>
-            <img src="../../assets/icons/next.svg">
-        </li>
-        <li class="main-menu">
-            <span class="text-menu">บทความ</span>
-        </li>
-    </ul>
-    <ul class="right-menu">
-        <li class="icon-menu">
-            <img src="../../assets/icons/nav-search.svg">
-        </li>
-        <li class="icon-menu">
-            <img src="../../assets/icons/nav-account.png">
-            <span class="account-menu">คุณประกัน</span>
-            <img src="../../assets/icons/next.svg">
-        </li>
-        <li class="icon-menu">
-            <img src="../../assets/icons/nav-noti.png">
-        </li>
-    </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div class="product-menu-logo">
+                    <img src="../../assets/pictures/logo.png">
+                </div>
+            </div>
+            <div class="d-flex col-7">
+                <ul class="d-flex align-items-center product-menu-list">
+                    <li *ngFor="let menu of mainMenuList">
+                        <span>{{ menu.label }}</span>
+                        <img *ngIf="!!menu.subMenu.length" src="../../assets/icons/next.svg">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="right-menu">
+                    <li class="icon-menu">
+                        <img src="../../assets/icons/nav-search.svg">
+                    </li>
+                    <li class="icon-menu">
+                        <img src="../../assets/icons/nav-account.png">
+                        <span class="account-menu">คุณประกัน</span>
+                        <img src="../../assets/icons/next.svg">
+                    </li>
+                    <li class="icon-menu">
+                        <img src="../../assets/icons/nav-noti.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
